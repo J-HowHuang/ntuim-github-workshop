@@ -3,6 +3,7 @@ from command import CommandParser
 
 
 def game():
+    print("GAME START!!!!遊戲開始!!!")
     a = Player('A')
     b = Player('B')
     parser = CommandParser(a, b)
