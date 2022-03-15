@@ -11,6 +11,10 @@ class CommandParser():
             opponent_id = 'A' if sender_id == 'B' else 'B'
             opponent = self.players[opponent_id]
             sender.attack(opponent)
+        elif command.lower() == 'thunder':
+            opponent_id = 'A' if sender_id == 'B' else 'B'
+            opponent = self.players[opponent_id]
+            sender.thunder(opponent)
         elif command.lower() == 'quit':
             return False
         return True

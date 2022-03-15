@@ -9,7 +9,10 @@ class Player:
         print(f'{self.name}: Take this!')
         opponent.__under_attack(self)
         pass
-
+    def thunder(self, opponent: 'Player') -> None:
+        print(f'{self.name}: Hope you have an umbrella!')
+        opponent.__under_attack(self)
+        pass
     def __under_attack(self, attacker: 'Player') -> None:
         print(f'{self.name}: Ouch!')
         pass
