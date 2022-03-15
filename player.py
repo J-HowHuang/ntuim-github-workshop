@@ -10,6 +10,11 @@ class Player:
         opponent.__under_attack(self)
         pass
 
+    def fireball(self, opponent: 'Player') -> None:
+        print(f'{self.name}: Watch out my fire ball!')
+        opponent.__under_attack(self)
+        pass
+
     def __under_attack(self, attacker: 'Player') -> None:
         print(f'{self.name}: Ouch!')
         pass
